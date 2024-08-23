@@ -1,0 +1,20 @@
+The PDF is very difficult to parse automatically.
+There are some manual steps needed.
+
+Setting the correct year in the file GetPDF.py should download the PDFs for every single Municipality in the folder data/$year/pdf
+
+You shoudl manually exctract the text similar to this:
+
+pdf_text data/$year/pdf/1.pdf > sezana.txt
+
+Edit the file assignign the places and dates to dicitonaries in a defined group 
+
+You should replace the month names with numbers and add the year.
+Something similar to the commands in replace_months.sh should do.
+
+The final result should be something similar:
+
+Sezana = [
+{ "group": "A", "places": ["Avber", "Dobravlje", "Gradnje", "Kazlje", "Ponikve", "Štorje"], "dates": ["3-1-2024", "31-1-2024", "29-2-2024", "28-3-2024", "29-4-2024", "29-5-2024", "27-6-2024", "25-7-2024", "26-8-2024", "23-9-2024", "21-10-2024", "19-11-2024", "17-12-2024"] },
+{ "group": "B", "places": ["Dutovlje", "Križ", "Šepulje", "Šmarje pri Sežani", "Tomaj"], "dates": ["4-1-2024", "1-2-2024", "4-3-2024", "2-4-2024", "30-4-2024", "30-5-2024", "1-7-2024", "29-7-2024", "27-8-2024", "24-9-2024", "22-10-2024", "20-11-2024", "18-12-2024"] },
+]

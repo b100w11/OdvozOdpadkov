@@ -1,0 +1,4 @@
+1) automatic parsing of the PDF
+2) import python data structures from file
+3) script to generate an ICS based on the location or group
+  --location Avber or --group A
